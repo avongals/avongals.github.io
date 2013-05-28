@@ -1,71 +1,66 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>{{ page.title }} - David King</title>
+	<title>{{ page.title }} - Ash Gibson</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Author -->
-	<meta name="author" content="David King">
-	<link rel="author" href="https://plus.google.com/114477180785416187576/posts"/>
-	<!-- Customization -->
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu">
-	<link rel="stylesheet" href="/assets/style.css">
+	<meta name="author" content="Ash Gibson">
+	<link rel="author" href="https://plus.google.com/XXXXXXXXXXXXXXXXXXXXX/posts"/>
+	<!-- Styling -->
+	<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/assets/css/style.css">
+	<link rel="stylesheet" href="/assets/css/bootstrap-responsive.min.css">
 	{% for style in page.styles %}
 		<link rel="stylesheet" href="{{ style }}">
 	{% endfor %}
+	<!--[if lt IE 9]>
+		<script src="/assets/js/html5shiv.js"></script>
+	<![endif]-->
+	<!-- Fav and touch icons -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144"	href="/assets/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114"	href="/assets/ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72"		href="/assets/ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed"					href="/assets/ico/apple-touch-icon-57-precomposed.png">
+	<link rel="shortcut icon"									href="/assets/ico/favicon.png">
 </head>
-<!--
-	                 _             _     _ _ 
-	                | |           (_)   | | |
-	  ___   ___   __| | __ ___   ___  __| | |
-	 / _ \ / _ \ / _` |/ _` \ \ / / |/ _` | |
-	| (_) | (_) | (_| | (_| |\ V /| | (_| |_|
-	 \___/ \___/ \__,_|\__,_| \_/ |_|\__,_(_)
-	...what lovely source code you have!
-	
-	Hello nerdbuckets!
-
-	So you're wondering how my simple website functions? Or maybe you
-	accidentally pressed [CTRL][SHIFT][U] and are now pondering how to
-	rid this this bizzarro garblings of text from your screen.
-
-	I built this website in around 12 hours using Jekyll (it's a Ruby
-	thing) via github pages, I'm not a Ruby or Jekyll user but I figured
-	my personal webpage would be a good place to have a play.
-
-		Big thanks to:
-			http://brianscaturro.com/2012/06/12/blog-with-jekyll-and-github.html
-		You can get my *proper* sources over at:
-			https://github.com/oodavid/oodavid.github.com
-
-	Regards and whatnot
-	David
--->
 <body>
-	<!-- That's me! -->
-	<header>
-		<div class="center">
-			<hgroup>
-				<h1>David &quot;oodavid&quot; King</h1>
-				<h2>creative problem solver</h2>
-				<h3>full service web development</h3>
-			</hgroup>
-			<div id="meditate">
-				<div id="guru"></div>
-				<div id="shadow"></div>
+	<!-- Navigation -->
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="brand" href="#">Project name</a>
+				<div class="nav-collapse collapse">
+					<ul class="nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#contact">Contact</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li class="divider"></li>
+								<li class="nav-header">Nav header</li>
+								<li><a href="#">Separated link</a></li>
+								<li><a href="#">One more separated link</a></li>
+							</ul>
+						</li>
+					</ul>
+					<form class="navbar-form pull-right">
+						<input class="span2" type="text" placeholder="Email">
+						<input class="span2" type="password" placeholder="Password">
+						<button type="submit" class="btn">Sign in</button>
+					</form>
+				</div>
 			</div>
 		</div>
-	</header>
-	<!-- Navigation -->
-	<nav>
-		<ul>
-			<li><a href="/" {% if page.url == "/index.html" %} class="active" {% endif %} title="oodavid! ...what a lovely homepage you have!">David King</a></li>
-			<li><a href="{{ site.posts.first.url }}" title="{{ site.posts.first.title }}" {% if page.layout == "blog" or page.url == "/blog/index.html" %} class="active" {% endif %}>Blog</a></li>
-			<li><a href="/gviz/" {% if page.url == "/gviz/index.html" %} class="active" {% endif %} title="Online graphViz generator">GViz</a></li>
-			<li><a href="https://github.com/oodavid" title="Open-source work on github">GitHub</a></li>
-			<li><a href="/cv.html" title="My rather nerdy CV">CV</a></li>
-			<li><a href="mailto:david@oodavid.com" title="Email me">Contact</a></li>
-		</ul>
-	</nav>
-	<!-- The meat -->
-	<section>
-		<div class="center">
+	</div>
+	<!-- Container -->
+	<div class="container">
