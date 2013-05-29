@@ -38,11 +38,11 @@
 				<div class="nav-collapse collapse">
 					<ul class="nav pull-right">
 						<li {% if page.nav == 'home' %}    class="active" {% endif %}><a href="/">Home</a></li>
-						<li {% if page.nav == 'about' %}   class="active" {% endif %}><a href="/about.html">AVON Representative</a></li>
-						<li {% if page.nav == 'shop' %}    class="active" {% endif %}><a href="/shop.html">AVON Sales Leader</a></li>
-						<li {% if page.nav == 'contact' %} class="active" {% endif %}><a href="/contact.html">Success Stories</a></li>
-						<li {% if page.nav == 'contact' %} class="active" {% endif %}><a href="/contact.html">About Us</a></li>
-						<li {% if page.nav == 'contact' %} class="active" {% endif %}><a href="/contact.html">Our AVON Blog</a></li>
+						<li {% if page.nav == 'rep' %}     class="active" {% endif %}><a href="/avon-representative.html">AVON Representative</a></li>
+						<li {% if page.nav == 'leader' %}  class="active" {% endif %}><a href="/avon-sales-leader.html">AVON Sales Leader</a></li>
+						<li {% if page.nav == 'success' %} class="active" {% endif %}><a href="/success-stories.html">Success Stories</a></li>
+						<li {% if page.nav == 'about' %}   class="active" {% endif %}><a href="/about-us.html">About Us</a></li>
+						<li {% if page.nav == 'blog' %}    class="active" {% endif %}><a href="{{ site.posts.first.url }}" title="{{ site.posts.first.title }}">Blog</a></li>
 					</ul>
 				</div>
 			</div>
