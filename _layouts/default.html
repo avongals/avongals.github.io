@@ -1,6 +1,25 @@
 {% include header.html %}
 
-	<!-- Content -->
-	{{ content }}
+	
 
+	<div class="row">
+		<div class="span9">
+			<h1>{{ page.title }}</h1>
+		</div>
+		<div class="span3 hidden-phone">
+			<img src="/assets/img/logo.png" alt="AVON - the company for women" >
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="span9">
+			{{ content }}
+		</div>
+		<div class="span3">
+			<hr class="visible-phone">
+			{% include join.html %}
+		</div>
+	</div>	
+	<img class="visible-phone" src="/assets/img/logo.png" alt="AVON - the company for women" >
+	
 {% include footer.html %}
