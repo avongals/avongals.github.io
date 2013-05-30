@@ -2,9 +2,15 @@
 		<hr>
 		<footer>
 			&copy; 2013
-			<a href="https://plus.google.com/XXXXXXXXXXXXXXXXXXXXX?rel=author" rel="me" title="Find me on Google+">
-				<img src="/assets/img/ash-gibson.jpg" width="48" height="48" alt="Ash Gibson"> By Ash Gibson
-			</a>
+			{% if page.author == 'paul' %}
+				<a href="https://plus.google.com/XXXXXXXXXXXXXXXXXXXXX?rel=author" rel="me" title="Find me on Google+">
+					<img src="/assets/img/paul-king.jpg" width="48" height="48" alt="Paul King"> By Paul King
+				</a>
+			{% else %}
+				<a href="https://plus.google.com/XXXXXXXXXXXXXXXXXXXXX?rel=author" rel="me" title="Find me on Google+">
+					<img src="/assets/img/ash-gibson.jpg" width="48" height="48" alt="Ash Gibson"> By Ash Gibson
+				</a>
+			{% endif %}
 		</footer>
 	</div>
 	<!-- Scripts -->

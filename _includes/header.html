@@ -2,11 +2,16 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>{{ page.title }} - Ash Gibson</title>
+	<title>{{ page.title }} - AVON Gals</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Author -->
-	<meta name="author" content="Ash Gibson">
-	<link rel="author" href="https://plus.google.com/XXXXXXXXXXXXXXXXXXXXX/posts"/>
+	{% if page.author == 'paul' %}
+		<link rel="author" href="https://plus.google.com/XXXXXXXXXXXXXXXXXXXXX/posts"/>
+		<meta name="author" content="Paul King">
+	{% else %}
+		<link rel="author" href="https://plus.google.com/XXXXXXXXXXXXXXXXXXXXX/posts"/>
+		<meta name="author" content="Ash Gibson">
+	{% endif %}
 	<!-- Styling -->
 	<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/assets/css/style.css">
