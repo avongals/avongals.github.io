@@ -12,6 +12,7 @@ Thumbs.db
 *.db
 .Trashes
 .Spotlight-V100
+.desktop.ini
 
 ##### Build folder and log file
 _site/
